@@ -1,21 +1,15 @@
 use <generic_base_plate.scad>
 
-// ----- General notes
-// width = x axis
-// depth = y axis
-// height = z axis
-// All measures in millimeters
-
 module powerboost_1000_base(
     // thickness of base plate
-    plate_thickness = 3,
+    plate_height = 3,
     // mounting point height above plate
     mount_post_height = 2,
 ) {
-    // Powerboost 1000 measurements
-    pb_base_width = 36.2;
-    pb_base_depth = 22.86;
-    pb_base_fillet_radius = 2.5;
+    // https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/downloads#fabrication-print-2000498
+    pb_width = 36.2;
+    pb_depth = 22.86;
+    pb_fillet_radius = 2.5;
     pb_screw_size = 2.5;
 
     // Screw hole centers are consistently offset from the x and y edges.
@@ -29,23 +23,22 @@ module powerboost_1000_base(
         ],
         // top left x,y
         [
-
             pb_screw_hole_offset,
-            pb_base_depth - pb_screw_hole_offset
+            pb_depth - pb_screw_hole_offset
         ]
     ];
 
     generic_base_plate(
-        base_width = pb_base_width,
-        base_depth = pb_base_depth,
+        plate_width = pb_width,
+        plate_depth = pb_depth,
+        plate_height = plate_height,
+        plate_fillet_radius = pb_fillet_radius,
         mount_post_centers = pb_mount_post_centers,
-        base_fillet_radius = pb_base_fillet_radius,
-        plate_thickness = plate_thickness,
         mount_post_height = mount_post_height,
         metric_screw = pb_screw_size
     );
 }
 
-$fa = 1;
+$fa = 5;
 $fs = 0.25;
 powerboost_1000_base();
