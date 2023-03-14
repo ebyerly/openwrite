@@ -3,9 +3,9 @@ use <BOSL/shapes.scad>
 use <BOSL/metric_screws.scad>
 
 // ----- General notes
-// width = x axis
-// depth = y axis
-// height = z axis
+// width / left and right = x axis
+// depth / front and back = y axis
+// height / down and up = z axis
 // All measures in millimeters
 
 module generic_base_plate(
