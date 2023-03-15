@@ -60,6 +60,11 @@
   - https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/downloads
   - https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p3.pdf
 
+#### kicad
+
+* intro to kicad by hymel/digikey: https://www.youtube.com/playlist?list=PL3bNyZYHcRSUhUXUt51W6nKvxx2ORvUQB
+* getting to blink 5.0 by conceptual electronics: https://www.youtube.com/playlist?list=PLy2022BX6EspFAKBCgRuEuzapuz_4aJCn
+
 #### raspberry pi zero W
 
 Setup OS on micro SD card:
