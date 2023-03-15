@@ -6,28 +6,32 @@
 
 #### decisions
 
-[X] software: QMK, OpenSCAD, KiCAD
-[X] computer: Raspberry Pi Zero W v1.1
-[X] switches (defines stems and keycaps): Nuphy Wisteria, aka Gateron KS-33
-[ ] key layout
+* [X] software: QMK, OpenSCAD, KiCAD
+* [X] computer: Raspberry Pi Zero W v1.1
+* [X] switches (defines stems and keycaps): Nuphy Wisteria, aka Gateron KS-33
+* [X] computer: Raspberry Pi Zero W v1.1
+* [ ] key layout
     * http://www.keyboard-layout-editor.com/
     * see keyboard-layout.json for current thought (mapped from Moonlander configuration)
-[ ] keycap dimensions and gap
+* [ ] keycap dimensions and gap
     * 1mm gap is ~standard? what does Moonlander use?
-[ ] microcontroller
+* [ ] microcontroller for keyboard control
+    * breakout board or raw?
     * needs to pair with a socket
-[ ] display
-[ ] USB switch
+* [ ] display
+    * reference for display configurations supported by Adafruit: https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/blob/main/adafruit-pitft.py
+    * Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
+    * Adafruit PiTFT 2.2" HAT Mini Kit - 320x240 2.2" TFT - No Touch (24.95, https://www.adafruit.com/product/2315)
+* [ ] USB switch
     * 4pdt - why isn't this generally recommended?
-[ ] keyboard USB format
-    * USB-C with 4 pole output
+* [ ] keyboard USB format
+    * USB-C with 4 pole output? micro-USB?
 
 #### parts links / proto bill of materials
 
 * Raspberry Pi Zero W (10.00, https://www.adafruit.com/product/3400)
 * PowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost @ 1A - 1000C (19.95, https://www.adafruit.com/product/2465)
 * Lithium Ion Battery - 3.7v 2000mAh (12.50, https://www.adafruit.com/product/2011)
-* Adafruit PiTFT 2.2" HAT Mini Kit - 320x240 2.2" TFT - No Touch (24.95, https://www.adafruit.com/product/2315)
 * Magicforce 68 (39.98, https://www.amazon.com/Qisan-Mechanical-Keyboard-68-Keys-Magicforce/dp/B01E8KO2B0)
 * Micro SD 16GB (5.79, https://www.amazon.com/SanDisk%C2%AE-microSDHCTM-8GB-Memory-Card/dp/B001T9CU40)
 * USB DIY Slim Connector Shell - MicroB Plug (2 x 0.95, https://www.adafruit.com/product/1826)
