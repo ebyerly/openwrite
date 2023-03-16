@@ -64,6 +64,7 @@
 * intro to kicad by hymel/digikey: https://www.youtube.com/playlist?list=PL3bNyZYHcRSUhUXUt51W6nKvxx2ORvUQB
 * getting to blink 5.0 by conceptual electronics: https://www.youtube.com/playlist?list=PLy2022BX6EspFAKBCgRuEuzapuz_4aJCn
 * schematic simulation / SPICE integration: https://www.kicad.org/discover/spice/
+* visually interesting circuit simulator with lots of examples: https://www.falstad.com/circuit/circuitjs.html
 
 #### raspberry pi zero W
 
