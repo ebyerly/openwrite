@@ -7,7 +7,6 @@
 #### decisions
 
 * [X] software: QMK, OpenSCAD, KiCAD
-* [X] computer: Raspberry Pi Zero W v1.1
 * [X] switches (defines stems and keycaps): Nuphy Wisteria, aka Gateron KS-33
 * [X] computer: Raspberry Pi Zero W v1.1
 * [ ] key layout
