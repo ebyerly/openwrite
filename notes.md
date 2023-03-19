@@ -65,6 +65,11 @@
 * getting to blink 5.0 by conceptual electronics: https://www.youtube.com/playlist?list=PLy2022BX6EspFAKBCgRuEuzapuz_4aJCn
 * schematic simulation / SPICE integration: https://www.kicad.org/discover/spice/
 * visually interesting circuit simulator with lots of examples: https://www.falstad.com/circuit/circuitjs.html
+* https://blog.oshpark.com/2020/10/08/kicad-3d-viewer-can-now-render-after-dark/
+
+##### pcb templates
+
+* https://github.com/sethhillbrand/kicad_templates - includes OSH Park 2 layer (apparently validated by their team!)
 
 #### raspberry pi zero W
 
