@@ -3,6 +3,7 @@
 * through-hole pcb-mounted-microcontroller usb-c keyboard (discipline): https://github.com/coseyfannitutti/discipline
 * through-hole pcb-mounted-microcontroller usb-c keyboard (framework): https://github.com/stevennguyen/framework
 * mini computer with custom keyboard (penkesu): https://github.com/penk/penkesu
+* cyberdetox rpi400 mod: https://www.reddit.com/r/cyberDeck/comments/11tzifa/new_cyberdetox_displat_for_raspberry_pi_400/
 
 #### decisions
 
