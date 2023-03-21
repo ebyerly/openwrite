@@ -1,23 +1,14 @@
-#### reference projects
-
-* through-hole pcb-mounted-microcontroller usb-c keyboard (discipline): https://github.com/coseyfannitutti/discipline
-* through-hole pcb-mounted-microcontroller usb-c keyboard (framework): https://github.com/stevennguyen/framework
-* mini computer with custom keyboard (penkesu): https://github.com/penk/penkesu
-* cyberdetox rpi400 mod: https://www.reddit.com/r/cyberDeck/comments/11tzifa/new_cyberdetox_displat_for_raspberry_pi_400/
-
 #### decisions
 
 * [X] software: QMK, OpenSCAD, KiCAD
-* [X] switches (defines stems and keycaps): Nuphy Wisteria, aka Gateron KS-33
+* [X] switches (defines stems and keycaps): Nuphy Wisteria (Gateron KS-33)
 * [X] computer: Raspberry Pi Zero W v1.1
+* [X] microcontroller for keyboard control: Raspberry Pi Pico
+* [X] keycap dimensions and gap: 19mm between lead centers
+* [X] power management: Adafruit PowerBoost 1000C (overkill, but I already own it)
 * [ ] key layout
     * http://www.keyboard-layout-editor.com/
     * see keyboard-layout.json for current thought (mapped from Moonlander configuration)
-* [ ] keycap dimensions and gap
-    * 1mm gap is ~standard? what does Moonlander use?
-* [ ] microcontroller for keyboard control
-    * breakout board or raw?
-    * needs to pair with a socket
 * [ ] display
     * reference for display configurations supported by Adafruit: https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/blob/main/adafruit-pitft.py
     * Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
@@ -32,33 +23,17 @@
 * Raspberry Pi Zero W (10.00, https://www.adafruit.com/product/3400)
 * PowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost @ 1A - 1000C (19.95, https://www.adafruit.com/product/2465)
 * Lithium Ion Battery - 3.7v 2000mAh (12.50, https://www.adafruit.com/product/2011)
-* Magicforce 68 (39.98, https://www.amazon.com/Qisan-Mechanical-Keyboard-68-Keys-Magicforce/dp/B01E8KO2B0)
 * Micro SD 16GB (5.79, https://www.amazon.com/SanDisk%C2%AE-microSDHCTM-8GB-Memory-Card/dp/B001T9CU40)
-* USB DIY Slim Connector Shell - MicroB Plug (2 x 0.95, https://www.adafruit.com/product/1826)
 * Breadboard-friendly SPDT Slide Switch (0.95, https://www.adafruit.com/product/805)
 
+#### reference projects
 
-#### random
-
-* microcontroller socketing: https://docs.splitkb.com/hc/en-us/articles/360011263059-How-do-I-socket-a-microcontroller-
-* https://www.youtube.com/watch?v=ezk02GJ9iMs
-* https://ergogen.cache.works/
-* https://wiki.ai03.com/books/pcb-design/page/pcb-guide-part-1---preparations
-* https://learn.adafruit.com/pigrrl-zero - guide to create a Pi Zero powered gaming device, includes step-by-step on connecting battery and display.
-* http://i.imgur.com/ZQHDGTV.jpg
-* https://sudomod.com/forum/viewtopic.php?t=2666
-* https://cdn.sparkfun.com/assets/learn_tutorials/6/7/6/PiZero_1.pdf
-* https://www.neverstopbuilding.com/blog/wiring-micro-usb-pinout
-* https://en.wikipedia.org/wiki/USB
-* https://desertbot.io/blog/headless-pi-zero-w-wifi-setup-windows
-* OpenSCAD libraries/models:
-  - https://github.com/revarbat/BOSL
-  - https://www.thingiverse.com/thing:1638529
-  - https://www.thingiverse.com/thing:2186550
-* Part dimension sources
-  - https://learn.adafruit.com/adafruit-2-2-pitft-hat-320-240-primary-display-for-raspberry-pi/downloads
-  - https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/downloads
-  - https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p3.pdf
+* through-hole pcb-mounted-microcontroller usb-c keyboard (discipline): https://github.com/coseyfannitutti/discipline
+* through-hole pcb-mounted-microcontroller usb-c keyboard (framework): https://github.com/stevennguyen/framework
+* mini computer with custom keyboard (penkesu): https://github.com/penk/penkesu
+* system76 launch keyboard with integrated USB hub: https://github.com/system76/launch
+* Env-KB, a Raspberry Pi Pico keyboard: https://github.com/Envious-Data/Env-KB
+* cyberdetox rpi400 mod: https://www.reddit.com/r/cyberDeck/comments/11tzifa/new_cyberdetox_displat_for_raspberry_pi_400/
 
 #### kicad
 
@@ -92,3 +67,26 @@ ssh pi@<local IP address>
 # Default password is "raspberry"
 # Next following https://learn.adafruit.com/adafruit-2-2-pitft-hat-320-240-primary-display-for-raspberry-pi/easy-install
 ```
+
+#### random
+
+* https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf
+* microcontroller socketing: https://docs.splitkb.com/hc/en-us/articles/360011263059-How-do-I-socket-a-microcontroller-
+* https://www.youtube.com/watch?v=ezk02GJ9iMs
+* https://ergogen.cache.works/
+* https://wiki.ai03.com/books/pcb-design/page/pcb-guide-part-1---preparations
+* https://learn.adafruit.com/pigrrl-zero - guide to create a Pi Zero powered gaming device, includes step-by-step on connecting battery and display.
+* http://i.imgur.com/ZQHDGTV.jpg
+* https://sudomod.com/forum/viewtopic.php?t=2666
+* https://cdn.sparkfun.com/assets/learn_tutorials/6/7/6/PiZero_1.pdf
+* https://www.neverstopbuilding.com/blog/wiring-micro-usb-pinout
+* https://en.wikipedia.org/wiki/USB
+* https://desertbot.io/blog/headless-pi-zero-w-wifi-setup-windows
+* OpenSCAD libraries/models:
+  - https://github.com/revarbat/BOSL
+  - https://www.thingiverse.com/thing:1638529
+  - https://www.thingiverse.com/thing:2186550
+* Part dimension sources
+  - https://learn.adafruit.com/adafruit-2-2-pitft-hat-320-240-primary-display-for-raspberry-pi/downloads
+  - https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/downloads
+  - https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p3.pdf
