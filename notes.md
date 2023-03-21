@@ -1,9 +1,9 @@
 #### decisions
 
 * [X] software: QMK, OpenSCAD, KiCAD
-* [X] switches (defines stems and keycaps): Nuphy Wisteria (Gateron KS-33)
+* [X] switches: Nuphy Wisteria / Gateron KS-33
 * [X] computer: Raspberry Pi Zero W v1.1
-* [X] microcontroller for keyboard control: Raspberry Pi Pico
+* [X] microcontroller for keyboard control: Adafruit KB2040 (https://github.com/adafruit/Adafruit-KB2040-PCB, https://github.com/drewgates/kb2040-kicad)
 * [X] keycap dimensions and gap: 19mm between lead centers
 * [X] power management: Adafruit PowerBoost 1000C (overkill, but I already own it)
 * [ ] key layout
@@ -34,6 +34,7 @@
 * system76 launch keyboard with integrated USB hub: https://github.com/system76/launch
 * Env-KB, a Raspberry Pi Pico keyboard: https://github.com/Envious-Data/Env-KB
 * cyberdetox rpi400 mod: https://www.reddit.com/r/cyberDeck/comments/11tzifa/new_cyberdetox_displat_for_raspberry_pi_400/
+* GreatScott DIY charge/boost: https://www.youtube.com/watch?v=Fj0XuYiE7HU, https://www.instructables.com/DIY-LiPo-ChargeProtect5V-Boost-Circuit/
 
 #### kicad
 
