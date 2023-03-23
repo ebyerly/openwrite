@@ -71,6 +71,7 @@ ssh pi@<local IP address>
 
 #### random
 
+* "A simple guide to electronics components" - https://www.youtube.com/watch?v=6Maq5IyHSuc
 * https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf
 * microcontroller socketing: https://docs.splitkb.com/hc/en-us/articles/360011263059-How-do-I-socket-a-microcontroller-
 * https://www.youtube.com/watch?v=ezk02GJ9iMs
