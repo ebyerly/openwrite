@@ -4,7 +4,7 @@
 * [X] switches: Nuphy Wisteria / Gateron KS-33
 * [X] computer: Raspberry Pi Zero W v1.1
 * [X] microcontroller for keyboard control: Adafruit KB2040 (https://github.com/adafruit/Adafruit-KB2040-PCB, https://github.com/drewgates/kb2040-kicad)
-* [X] keycap dimensions and gap: 19mm between lead centers
+* [X] keycap dimensions and gap: 19mm between lead centers (cap standard is ~18mm)
 * [X] power management: Adafruit PowerBoost 1000C (overkill, but I already own it)
 * [ ] key layout
     * http://www.keyboard-layout-editor.com/
@@ -92,3 +92,11 @@ ssh pi@<local IP address>
   - https://learn.adafruit.com/adafruit-2-2-pitft-hat-320-240-primary-display-for-raspberry-pi/downloads
   - https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/downloads
   - https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p3.pdf
+
+#### iterations
+
+* charge/boost/buck functionality directly on the board (replace the Powerboost 1000C)
+* Keyboard microcontroller directly on the board (replace the KB2040)
+* microcontroller-powered text editor (move closer to alphasmart)
+* RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
+* E-ink screen
