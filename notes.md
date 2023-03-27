@@ -6,15 +6,12 @@
 * [X] microcontroller for keyboard control: Adafruit KB2040 (https://github.com/adafruit/Adafruit-KB2040-PCB, https://github.com/drewgates/kb2040-kicad)
 * [X] keycap dimensions and gap: 19mm between lead centers (cap standard is ~18mm)
 * [X] power management: Adafruit PowerBoost 1000C (overkill, but I already own it)
-* [ ] key layout
-    * http://www.keyboard-layout-editor.com/
-    * see keyboard-layout.json for current thought (mapped from Moonlander configuration)
-* [ ] display
-    * reference for display configurations supported by Adafruit: https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/blob/main/adafruit-pitft.py
-    * Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
-    * Adafruit PiTFT 2.2" HAT Mini Kit - 320x240 2.2" TFT - No Touch (24.95, https://www.adafruit.com/product/2315)
+* [X] key layout: in flux, but 5x14 ortholinear to match Moonlander to start
+* [X] display - Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
 * [ ] USB switch
-    * 4pdt - why isn't this generally recommended?
+    * M2042TNW01-DA - 4pdt rated for 4A
+    * 50209LX - 3pdt rated for 1A
+    * ANT33FAR2S25RE - 3PDT 5A 120V
 * [ ] keyboard USB format
     * USB-C with 4 pole output? micro-USB?
 
@@ -67,6 +64,38 @@ wget http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-09
 ssh pi@<local IP address>
 # Default password is "raspberry"
 # Next following https://learn.adafruit.com/adafruit-2-2-pitft-hat-320-240-primary-display-for-raspberry-pi/easy-install
+
+
+# TODO: fix up the Waveshare installation script
+# https://github.com/adafruit/Raspberry-Pi-Installer-Scripts/blob/main/adafruit-pitft.py
+# `sudo raspi-config` to enable SPI (can do through config?)
+# "Install BCM2835 libraries" - why?
+sudo apt-get install cmake -y
+cd ~
+wget https://www.waveshare.com/w/upload/1/18/Waveshare_fbcp.zip
+unzip Waveshare_fbcp.zip
+cd Waveshare_fbcp/
+sudo chmod +x ./shell/*
+if [ -d "/home/elizabeth/Waveshare_fbcp/build" ]; then
+    sudo rm -rf /home/elizabeth/Waveshare_fbcp/build
+fi
+mkdir /home/elizabeth/Waveshare_fbcp/build
+sudo apt-get update
+sudo apt-get install cmake -y
+sudo apt-get install p7zip-full -y
+sudo cp /home/elizabeth/Waveshare_fbcp/shell/boot/waveshare-2inch.txt /boot/config.txt
+sudo cp /home/elizabeth/Waveshare_fbcp/shell/etc/rc.local /etc/rc.local
+cd /home/elizabeth/Waveshare_fbcp/build
+sudo cmake -DSPI_BUS_CLOCK_DIVISOR=20 -DWAVESHARE_2INCH_LCD=ON -DBACKLIGHT_CONTROL=ON -DSTATISTICS=0 ..
+sudo make -j
+if [ -x "/usr/local/bin/fbcp" ]; then
+  sudo rm -rf /usr/local/bin/fbcp
+fi
+sudo cp ./fbcp /usr/local/bin/fbcp
+
+echo "The system is configured."
+echo "The system will restart."
+sudo reboot
 ```
 
 #### random
