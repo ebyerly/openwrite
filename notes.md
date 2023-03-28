@@ -13,7 +13,7 @@
     * 50209LX - 3pdt rated for 1A
     * ANT33FAR2S25RE - 3PDT 5A 120V
 * [ ] keyboard USB format
-    * USB-C with 4 pole output? micro-USB?
+    * USB-C with 4 pole output? micro-USB? Would prefer usb-c, but want to confirm there's no risk of attempted power delivery beyond what the board can handle (does usb-c charging default low and only exceed usb 2* standard after a handshake...?)
 
 #### parts links / proto bill of materials
 
@@ -126,6 +126,7 @@ sudo reboot
 
 * charge/boost/buck functionality directly on the board (replace the Powerboost 1000C)
 * Keyboard microcontroller directly on the board (replace the KB2040)
+* integrated touchpad (https://www.cirque.com/glidepoint-circle-trackpads)
 * microcontroller-powered text editor (move closer to alphasmart)
 * RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
 * E-ink screen
