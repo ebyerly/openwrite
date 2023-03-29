@@ -1,19 +1,17 @@
 #### decisions
 
-* [X] software: QMK, OpenSCAD, KiCAD
+* [X] software: QMK, KiCAD, OpenSCAD
 * [X] switches: Nuphy Wisteria / Gateron KS-33
 * [X] computer: Raspberry Pi Zero W v1.1
 * [X] microcontroller for keyboard control: Adafruit KB2040 (https://github.com/adafruit/Adafruit-KB2040-PCB, https://github.com/drewgates/kb2040-kicad)
 * [X] keycap dimensions and gap: 19mm between lead centers (cap standard is ~18mm)
 * [X] power management: Adafruit PowerBoost 1000C (overkill, but I already own it)
 * [X] key layout: in flux, but 5x14 ortholinear to match Moonlander to start
-* [X] display - Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
-* [ ] USB switch
-    * M2042TNW01-DA - 4pdt rated for 4A
-    * 50209LX - 3pdt rated for 1A
-    * ANT33FAR2S25RE - 3PDT 5A 120V
+* [X] display: Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
+* [X] USB switch: M2042LL2W03 (4pdt PCB mount toggle rated for 4A)
 * [ ] keyboard USB format
-    * USB-C with 4 pole output? micro-USB? Would prefer usb-c, but want to confirm there's no risk of attempted power delivery beyond what the board can handle (does usb-c charging default low and only exceed usb 2* standard after a handshake...?)
+    * USB-C with 4 pole output? micro-USB? Would prefer usb-c, but want to confirm there's no risk of power delivery past what I design the board to receive
+    * "All USB-C cables must be able to carry a minimum of 3 A current (at 20 V, 60 W)"
 
 #### parts links / proto bill of materials
 
