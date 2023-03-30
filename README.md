@@ -93,4 +93,5 @@ DIY alternative to https://getfreewrite.com/ because I love the concept and the 
 * microcontroller-powered text editor (move closer to alphasmart)
 * RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
 * E-ink screen
-* Replace physical USB switch with an IC that detects when the onboard computer is powered on or not
+* Replace physical USB switch with an IC that detects when the onboard computer is powered on or not (TMUX4053? QS4A205QG?)
+* Hotswap sockets
