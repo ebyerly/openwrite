@@ -15,3 +15,4 @@ qmk new-keyboard
 
 # Does QMK care where it lives? Can I move these directories around?
 ls ~/qmk_firmware/keyboards/kb2040_2x2_test
+qmk compile --keyboard kb2040_2x2_test --keymap default
