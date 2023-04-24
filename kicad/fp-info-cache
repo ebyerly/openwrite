@@ -1,4 +1,4 @@
-21677257856948949
+21678940172494537
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90206,8 +90206,8 @@ adafruit-powerboost-1000c
 
 
 0
-12
-9
+16
+11
 openwrite
 gateron-ks-33-1u
 
@@ -90216,12 +90216,19 @@ gateron-ks-33-1u
 2
 2
 openwrite
+gateron-ks-33-1u-diode
+
+
+0
+4
+2
+openwrite
 raspberry-pi-zero-with-test-pads
 Raspberry Pi Zero using through hole straight pin socket, 2x20, 2.54mm pitch, https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p2.pdf
 raspberry pi zero through hole
 0
-40
-40
+62
+62
 openwrite
 waveshare-2in-lcd-st7789v
 

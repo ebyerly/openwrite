@@ -1,9 +1,11 @@
 part,manufacturer,price,link,purpose,notes
-KS-33 (Wisteria),Gateron,$38.50/100,https://nuphy.com/collections/switches/products/nuphy-wisteria-t55-switches,keyboard switches,
-M2042LL2W03,NKK,X,https://www.digikey.com/en/products/detail/nkk-switches/M2042LL2W03/4510922,Switch keyboard USB from onboard computer to external connection,4pdt PCB mount toggle rated for 4A
+KS-33 (Wisteria),Gateron,$38.50/100,https://nuphy.com/collections/switches/products/nuphy-wisteria-t55-switches,keyboard switches,X
 Raspberry Pi Zero W,X,$10,https://www.adafruit.com/product/3400,Onboard computer,X
 PowerBoost 1000 Charger,Adafruit,$19.95,https://www.adafruit.com/product/2465,Manage LiPo and onboard computer power,Rechargeable 5V Lipo USB Boost @ 1A - https://github.com/adafruit/Adafruit-PowerBoost-1000C
+KB2040,Adafruit,$8.95,https://www.adafruit.com/product/5302,Keyboard driver,https://github.com/adafruit/Adafruit-KB2040-PCB
+2" LCD ST7789v,Waveshare,$14.75,https://www.amazon.com/2inch-IPS-LCD-Display-Module/dp/B082GFTZQD,Screen/display,https://www.waveshare.com/wiki/2inch_LCD_Module
 16Gb MicroSD (generic),N/A,~$7,https://www.google.com/search?q=16gb+microsd,Onboard computer storage,X
 EG1218,E-Switch,$0.65,https://www.digikey.com/en/products/detail/e-switch/EG1218/101726,On/Off switch for onboard computer power,X
-LP-803860,Adafruit-ish,$12.50,https://www.digikey.com/en/products/detail/adafruit-industries-llc/2011/6612469,Battery for onboard computer,X
-KB2040,Adafruit,$8.95,https://www.adafruit.com/product/5302,Keyboard driver,https://github.com/adafruit/Adafruit-KB2040-PCB
+BK-18650-PC2,MPD,$3.75,https://www.digikey.com/en/products/detail/mpd-memory-protection-devices/BK-18650-PC2/2079908,18650 battery holder,X
+PRT-12895,SparkFun,$6.62,https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-12895/5271298,2.6Ah 18650 battery,X
+JST PH 2-Pin Cable - Female,Adafruit,$0.75,https://www.adafruit.com/product/261,Connect powerboost to board/battery,X
