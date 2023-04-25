@@ -10,13 +10,9 @@ Custom and modified KiCAD footprints used to build the openwrite PCB.
 
 ![Image of adafruit-powerboost-1000c KiCAD footprint captured from the footprint editor view](./adafruit-powerboost-1000c.png)
 
-### gateron-ks-33-1u-diode
+### gateron-ks-33-diode
 
-TODO
-
-### gateron-ks-33-1u
-
-![Image of gateron-ks-33-1u KiCAD footprint captured from the footprint editor view](./gateron-ks-33-1u.png)
+![Image of gateron-ks-33-diode KiCAD footprint captured from the footprint editor view](./gateron-ks-33-diode.png)
 
 ### raspberry-pi-zero-with-test-pads
 
