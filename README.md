@@ -45,10 +45,10 @@ DIY alternative to https://getfreewrite.com/ because I love the concept and the 
 * integrated touchpad (https://www.cirque.com/glidepoint-circle-trackpads)
 * microcontroller-powered text editor (move closer to alphasmart)
 * RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
+  - unclear if feasible: integrate usb-c hub so RPiZ can interface with my existing desk setup
 * E-ink screen
 * Add USB switching logic so switching the keyboard output doesn't require reseting the device
-* Replace physical USB switch with an IC that detects when the onboard computer is powered on or not (TMUX4053? QS4A205QG?)
-* Hotswap sockets
+* Hotswap sockets (Mill-Max 3305-0-15-80)
 
 #### reference projects
 
