@@ -37,10 +37,18 @@ DIY alternative to https://getfreewrite.com/ because I love the concept and the 
 * [X] power management: Adafruit PowerBoost 1000C (overkill, but I already own it)
 * [X] key layout: in flux, but 5x14 ortholinear to match Moonlander to start
 * [X] display: Waveshare 2" display ($15, https://www.waveshare.com/2inch-lcd-module.htm)
-* [X] USB switch: M2042LL2W03 (4pdt PCB mount toggle rated for 4A)
-* [ ] keyboard USB header format
-    * USB-C with 4 pole output? micro-USB? Would prefer usb-c, but want to confirm there's no risk of power delivery past what I design the board to receive
-    * "All USB-C cables must be able to carry a minimum of 3 A current (at 20 V, 60 W)"
+
+#### iterations
+
+* charge/boost/buck functionality directly on the board (replace the Powerboost 1000C)
+* Keyboard microcontroller directly on the board (replace the KB2040)
+* integrated touchpad (https://www.cirque.com/glidepoint-circle-trackpads)
+* microcontroller-powered text editor (move closer to alphasmart)
+* RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
+* E-ink screen
+* Add USB switching logic so switching the keyboard output doesn't require reseting the device
+* Replace physical USB switch with an IC that detects when the onboard computer is powered on or not (TMUX4053? QS4A205QG?)
+* Hotswap sockets
 
 #### reference projects
 
@@ -84,14 +92,3 @@ DIY alternative to https://getfreewrite.com/ because I love the concept and the 
   - https://learn.adafruit.com/adafruit-2-2-pitft-hat-320-240-primary-display-for-raspberry-pi/downloads
   - https://learn.adafruit.com/adafruit-powerboost-1000c-load-share-usb-charge-boost/downloads
   - https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p3.pdf
-
-#### iterations
-
-* charge/boost/buck functionality directly on the board (replace the Powerboost 1000C)
-* Keyboard microcontroller directly on the board (replace the KB2040)
-* integrated touchpad (https://www.cirque.com/glidepoint-circle-trackpads)
-* microcontroller-powered text editor (move closer to alphasmart)
-* RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
-* E-ink screen
-* Replace physical USB switch with an IC that detects when the onboard computer is powered on or not (TMUX4053? QS4A205QG?)
-* Hotswap sockets
