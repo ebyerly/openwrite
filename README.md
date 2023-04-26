@@ -47,7 +47,7 @@ DIY alternative to https://getfreewrite.com/ because I love the concept and the 
 * RPiZ supports HDMI output / hot-swap boot micro-SD with regular RaspbianOS (move closer to a portable work station)
   - unclear if feasible: integrate usb-c hub so RPiZ can interface with my existing desk setup
 * E-ink screen
-* Add USB switching logic so switching the keyboard output doesn't require reseting the device
+* Add USB switching logic so switching the keyboard output doesn't require reseting the device (e.g. TS3USB221A, USB mux/demux that supports 2 upstream devices and one downstream device)
 * Hotswap sockets (Mill-Max 3305-0-15-80)
 
 #### reference projects
